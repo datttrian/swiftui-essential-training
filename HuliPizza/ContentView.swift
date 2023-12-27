@@ -10,9 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            
-            
-            
+
             ZStack {
                 Image("surfBanner").resizable().scaledToFit()
                 Text("Huli Pizza Company").background()
@@ -27,8 +25,6 @@ struct ContentView: View {
                 Image("0_sm")
                 Text("Margherita")
             }
-            
-            
             Spacer()
         }
         .padding()
