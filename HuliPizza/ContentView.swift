@@ -23,4 +23,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+//        .colorScheme(.dark)
+//        .background(Color.black)
 }
