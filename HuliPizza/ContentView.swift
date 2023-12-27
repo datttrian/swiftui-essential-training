@@ -12,9 +12,23 @@ struct ContentView: View {
         VStack {
             
             
-            Text("Huli Pizza Company")
-            Image("surfBanner").resizable().scaledToFit()
+            
+            ZStack {
+                Image("surfBanner").resizable().scaledToFit()
+                Text("Huli Pizza Company").background()
+            }
             Text("Order Pizza").font(.title)
+            HStack(alignment:.firstTextBaseline) {
+                Text("Your Order item")
+                Spacer()
+                Text("$00.00")
+            }
+            HStack(alignment:.top, spacing: 15) {
+                Image("0_sm")
+                Text("Margherita")
+            }
+            
+            
             Spacer()
         }
         .padding()
