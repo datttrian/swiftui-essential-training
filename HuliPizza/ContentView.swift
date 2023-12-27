@@ -15,15 +15,21 @@ struct ContentView: View {
                 Image("surfBanner").resizable().scaledToFit()
                 Text("Huli Pizza Company").background()
             }
-            Text("Order Pizza").font(.title)
+            HStack {
+                Text("Order Pizza").font(.title)
+                Spacer()
+            }
             HStack(alignment:.firstTextBaseline) {
                 Text("Your Order item")
                 Spacer()
-                Text("$00.00")
+                Text(19.90, format: .currency(code: "USD"))
             }
             HStack(alignment:.top, spacing: 15) {
                 Image("0_sm")
-                Text("Margherita")
+                VStack(alignment:.leading) {
+                    Text("Margherita")
+                    Text("Description")
+                }
             }
             Spacer()
         }
