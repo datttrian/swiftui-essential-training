@@ -11,12 +11,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+            
             Text("Huli Pizza Company")
-            Image("surfBanner")
-            Text("Order Pizza")
+            Image("surfBanner").resizable().scaledToFit()
+            Text("Order Pizza").font(.title)
             Spacer()
         }
         .padding()
