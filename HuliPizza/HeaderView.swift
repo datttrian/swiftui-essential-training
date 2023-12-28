@@ -13,6 +13,8 @@ struct HeaderView: View {
       Image("surfBanner")
         .resizable()
         .scaledToFit()
+        //        .scaledToFill()
+        .ignoresSafeArea()
       Text("Huli Pizza Company")
         .font(.custom("Georgia", size: 30, relativeTo: .title))
         //        .foregroundColor(Color("Sky"))

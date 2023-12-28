@@ -12,11 +12,15 @@ struct MenuItemView: View {
     VStack {
       if let image = UIImage(named: "0_lg") {
         Image(uiImage: image)
+          .resizable()
+          .scaledToFit()
           //                    .clipShape(RoundedRectangle(cornerRadius:10))
           .cornerRadius(10)
           .shadow(color: .teal, radius: 5, x: 8, y: 8)
       } else {
         Image("surfboard_lg")
+          .resizable()
+          .scaledToFit()
       }
       VStack(alignment: .leading) {
         Text("Margherita")
