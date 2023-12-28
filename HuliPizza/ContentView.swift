@@ -17,6 +17,7 @@ struct ContentView: View {
         .shadow(radius: 5)
       if showOrders {
         OrderView(orders: orders)
+              .cornerRadius(10)
 
       } else {
         MenuItemView()
