@@ -47,5 +47,5 @@ struct OrderView: View {
 }
 
 #Preview {
-  OrderView(orders: [1, 2, 3, 4, 6])
+    OrderView(orders: [1, 2, 3, 4, 6])
 }
