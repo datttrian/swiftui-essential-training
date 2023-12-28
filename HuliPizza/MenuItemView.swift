@@ -14,6 +14,7 @@ struct MenuItemView: View {
         Image(uiImage: image)
           //                    .clipShape(RoundedRectangle(cornerRadius:10))
           .cornerRadius(10)
+          .shadow(color: .teal, radius: 5, x: 8, y: 8)
       } else {
         Image("surfboard_lg")
       }
@@ -21,7 +22,8 @@ struct MenuItemView: View {
         Text("Margherita")
           .font(.title)
           .fontWeight(.semibold)
-          .foregroundColor(Color("Surf"))
+          //          .foregroundColor(Color("Surf"))
+          .foregroundStyle(.thickMaterial)
           .padding(.leading)
           .background(
             .linearGradient(
