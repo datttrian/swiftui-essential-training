@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct OrderView: View {
-    var orders:[Int] = [1,2,3,4,6]
+    var orders:[Int]
     var body: some View {
         VStack {
-            HeaderView()
             Label {
                 Text(59.99, format: .currency(code: "USD"))
             }
@@ -26,6 +25,7 @@ struct OrderView: View {
             }
             ScrollView {
                 ForEach(orders,id:\.self){ order in
+                    OrderRowView(order: order)
                 }
             }
         }
@@ -34,5 +34,5 @@ struct OrderView: View {
 
 
 #Preview {
-    OrderView()
+    OrderView(orders: [1,2,3,4,6])
 }
