@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var orders:[Int] = [1, 2, 3, 4, 6]
-    var showOrders:Bool = true
+    var showOrders:Bool = false
     var body: some View {
         VStack {
             HeaderView()
