@@ -8,13 +8,53 @@
 import SwiftUI
 
 struct ContentView: View {
+    var orders:[Int] = [1,2,3,4,6]
     var body: some View {
         VStack {
+            ZStack {
+                Image("surfBanner").resizable().scaledToFit()
+                Text("Huli Pizza Company").background()
+            }
+            Image(systemName: orders.isEmpty ? "cart": "cart.circle.fill")
+            HStack {
+                Text("Order Pizza").font(.title)
+                Spacer()
+            }
+            ScrollView
+            {
+                ForEach(orders, id:\.self) { order in
+                    HStack(alignment:.firstTextBaseline) {
+                        Text("Your Order item \(order)")
+                        Spacer()
+                        Text(19.90, format: .currency(code: "USD"))
+                    }}
+            }
             
             
-            Text("Huli Pizza Company")
-            Image("surfBanner").resizable().scaledToFit()
-            Text("Order Pizza").font(.title)
+            VStack {
+                Image(systemName: "rectangle.fill")
+                Text("Margherita")
+                Text("Description")
+            }
+            
+            
+            ScrollView 
+            {
+                ForEach(1...35, id:\.self)
+                {
+                    item in HStack(alignment:.top, spacing: 15)
+                    {
+                        Image(systemName: "\(item).circle.fill").font(.largeTitle)
+                        VStack(alignment:.leading) 
+                        {
+                            Text("Margherita")
+                            Text("Description")
+                        }
+                    }
+                }
+            }
+            
+            
             Spacer()
         }
         .padding()
