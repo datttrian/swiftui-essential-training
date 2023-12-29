@@ -1,6 +1,6 @@
 //
 //  MenuItem.swift
-//  
+//
 //
 //  Created by Steven Lipton on 11/16/22.
 //
@@ -9,7 +9,7 @@
 
 import Foundation
 /// Defines a menu item
-struct MenuItem:Codable,Hashable{
+struct MenuItem:Codable,Hashable,Identifiable{
     var id:Int
     var category:MenuCategory
     var name:String
