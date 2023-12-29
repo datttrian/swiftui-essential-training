@@ -8,36 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
-  var orders: [Int] = [1, 2, 3, 4, 6]
-  var showOrders: Bool = false
-  var body: some View {
-    VStack {
-
-      HeaderView()
-        .shadow(radius: 5)
-      if showOrders {
-        OrderView(orders: orders)
-              .cornerRadius(10)
-
-      } else {
-        MenuItemView()
-          .padding(5)
-          .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
-        MenuView()
-
-      }
-      Spacer()
+    var menu:[MenuItem]
+    @State private var orders: [OrderItem] = testOrders
+    @State private var showOrders: Bool = false
+    @State private var selectedItem: MenuItem = noMenuItem
+    var body: some View {
+        VStack {
+            HeaderView()
+                .shadow(radius: 5)
+            HStack {
+                Text("\(orders.count) orders")
+                Spacer()
+                Button {
+                    showOrders.toggle()
+                } label: {
+                    Image(systemName: showOrders ? "cart": "menucard")
+                }
+            }
+            .foregroundStyle(.white)
+            .font(.title2)
+            if showOrders {
+                OrderView(orders: $orders)
+                    .cornerRadius(10)
+            } else {
+                MenuItemView(item:$selectedItem)
+                    .padding(5)
+                    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
+                MenuView(menu:menu, selectedItem: $selectedItem)
+                
+            }
+            Spacer()
+        }
+        .padding()
+        .background(
+            .linearGradient(
+                colors: [.cyan, Color("Surf"), Color("Sky"), .white], startPoint: .topLeading,
+                endPoint: .bottom))
     }
-    .padding()
-    .background(
-      .linearGradient(
-        colors: [.cyan, Color("Surf"), Color("Sky"), .white], startPoint: .topLeading,
-        endPoint: .bottom))
-  }
 }
 
 #Preview {
-  ContentView()
-  //        .colorScheme(.dark)
-  //        .background(Color.black)
+    ContentView(menu:MenuModel().menu)
+    //        .colorScheme(.dark)
+    //        .background(Color.black)
 }

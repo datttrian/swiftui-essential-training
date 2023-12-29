@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA03F5CA2B3E383B009894AA /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03F5C62B3E383B009894AA /* OrderModel.swift */; };
+		DA03F5CB2B3E383B009894AA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03F5C72B3E383B009894AA /* MenuItem.swift */; };
+		DA03F5CC2B3E383B009894AA /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03F5C82B3E383B009894AA /* OrderItem.swift */; };
+		DA03F5CD2B3E383B009894AA /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03F5C92B3E383B009894AA /* MenuModel.swift */; };
 		DA2EDACA2B3DDA6B00643177 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EDAC92B3DDA6B00643177 /* OrderView.swift */; };
 		DA2EDACC2B3DDA8400643177 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EDACB2B3DDA8400643177 /* MenuView.swift */; };
 		DA2EDACE2B3DDB4C00643177 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EDACD2B3DDB4C00643177 /* MenuItemView.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA03F5C62B3E383B009894AA /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		DA03F5C72B3E383B009894AA /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		DA03F5C82B3E383B009894AA /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		DA03F5C92B3E383B009894AA /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		DA2EDAC92B3DDA6B00643177 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		DA2EDACB2B3DDA8400643177 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		DA2EDACD2B3DDB4C00643177 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
@@ -47,6 +55,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA03F5C52B3E383B009894AA /* Model Code */ = {
+			isa = PBXGroup;
+			children = (
+				DA03F5C62B3E383B009894AA /* OrderModel.swift */,
+				DA03F5C72B3E383B009894AA /* MenuItem.swift */,
+				DA03F5C82B3E383B009894AA /* OrderItem.swift */,
+				DA03F5C92B3E383B009894AA /* MenuModel.swift */,
+			);
+			path = "Model Code";
+			sourceTree = "<group>";
+		};
 		DA8DF5ED2B3C9D1000D17971 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +94,7 @@
 				DA2EDACF2B3DDB5E00643177 /* MenuRowView.swift */,
 				DA2EDAD12B3DDB7000643177 /* OrderRowView.swift */,
 				DA2EDAD32B3DDB9A00643177 /* HeaderView.swift */,
+				DA03F5C52B3E383B009894AA /* Model Code */,
 				DA8DF5FD2B3C9D1100D17971 /* Assets.xcassets */,
 				DA8DF5FF2B3C9D1100D17971 /* HuliPizza.entitlements */,
 				DA8DF6002B3C9D1100D17971 /* Preview Content */,
@@ -162,11 +182,15 @@
 			files = (
 				DA2EDACA2B3DDA6B00643177 /* OrderView.swift in Sources */,
 				DA2EDACC2B3DDA8400643177 /* MenuView.swift in Sources */,
+				DA03F5CA2B3E383B009894AA /* OrderModel.swift in Sources */,
 				DA8DF5FC2B3C9D1000D17971 /* ContentView.swift in Sources */,
 				DA8DF5FA2B3C9D1000D17971 /* HuliPizzaApp.swift in Sources */,
+				DA03F5CC2B3E383B009894AA /* OrderItem.swift in Sources */,
 				DA2EDAD72B3DE31900643177 /* RatingsView.swift in Sources */,
 				DA2EDAD02B3DDB5E00643177 /* MenuRowView.swift in Sources */,
 				DA2EDAD22B3DDB7000643177 /* OrderRowView.swift in Sources */,
+				DA03F5CD2B3E383B009894AA /* MenuModel.swift in Sources */,
+				DA03F5CB2B3E383B009894AA /* MenuItem.swift in Sources */,
 				DA2EDACE2B3DDB4C00643177 /* MenuItemView.swift in Sources */,
 				DA2EDAD42B3DDB9A00643177 /* HeaderView.swift in Sources */,
 			);
