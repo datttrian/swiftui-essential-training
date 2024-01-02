@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
-//  HuliPizzaPay
+//  PhotoController.swift
+//  HuliPizza
 //
-//  Created by LinkedIn User on 11/18/22.
+//  Created by datttrian on 2024-01-02.
 //
 
 import UIKit
@@ -23,6 +23,8 @@ struct PhotoView:UIViewControllerRepresentable{
     func makeUIViewController(context: Context) -> some UIViewController {
         PhotoController()
     }
+    
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
     }
 }

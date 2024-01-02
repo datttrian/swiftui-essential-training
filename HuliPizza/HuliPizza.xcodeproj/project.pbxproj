@@ -11,6 +11,7 @@
 		DA03F5CB2B3E383B009894AA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03F5C72B3E383B009894AA /* MenuItem.swift */; };
 		DA03F5CC2B3E383B009894AA /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03F5C82B3E383B009894AA /* OrderItem.swift */; };
 		DA03F5CD2B3E383B009894AA /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03F5C92B3E383B009894AA /* MenuModel.swift */; };
+		DA1C108D2B44818A0058A6C3 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C108C2B44818A0058A6C3 /* PhotoController.swift */; };
 		DA2EDACA2B3DDA6B00643177 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EDAC92B3DDA6B00643177 /* OrderView.swift */; };
 		DA2EDACC2B3DDA8400643177 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EDACB2B3DDA8400643177 /* MenuView.swift */; };
 		DA2EDACE2B3DDB4C00643177 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EDACD2B3DDB4C00643177 /* MenuItemView.swift */; };
@@ -38,6 +39,7 @@
 		DA03F5C72B3E383B009894AA /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		DA03F5C82B3E383B009894AA /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		DA03F5C92B3E383B009894AA /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		DA1C108C2B44818A0058A6C3 /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		DA2EDAC92B3DDA6B00643177 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		DA2EDACB2B3DDA8400643177 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		DA2EDACD2B3DDB4C00643177 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				DA8DF5F92B3C9D1000D17971 /* HuliPizzaApp.swift */,
 				DA8DF5FB2B3C9D1000D17971 /* ContentView.swift */,
+				DA1C108C2B44818A0058A6C3 /* PhotoController.swift */,
 				DAF7E9DE2B441F4C0076F056 /* OrderItemView.swift */,
 				DAF7E9DC2B441CE20076F056 /* StatusBarView.swift */,
 				DA2EDAC92B3DDA6B00643177 /* OrderView.swift */,
@@ -165,7 +168,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					DA8DF5F52B3C9D1000D17971 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2EDACA2B3DDA6B00643177 /* OrderView.swift in Sources */,
+				DA1C108D2B44818A0058A6C3 /* PhotoController.swift in Sources */,
 				DA2EDACC2B3DDA8400643177 /* MenuView.swift in Sources */,
 				DAD343B32B443D2D0074C8A8 /* FavoriteTileView.swift in Sources */,
 				DAB0A7492B4456F8009E1A95 /* MenuDetailView.swift in Sources */,
@@ -269,6 +273,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -330,6 +335,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -357,6 +363,7 @@
 				CODE_SIGN_ENTITLEMENTS = HuliPizza/HuliPizza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"HuliPizza/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -393,6 +400,7 @@
 				CODE_SIGN_ENTITLEMENTS = HuliPizza/HuliPizza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"HuliPizza/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

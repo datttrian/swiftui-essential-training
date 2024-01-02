@@ -1,12 +1,12 @@
 //
-//  ViewController.swift
-//  HuliPizzaPay
+//  Photo.swift
+//  HuliPizza
 //
 //  Created by LinkedIn User on 11/18/22.
 //
 
 import UIKit
-import SwiftUI
+
 
 class PhotoController:UIViewController{
     var imageName = "0_lg"
@@ -18,11 +18,3 @@ class PhotoController:UIViewController{
     }
 }
 
-
-struct PhotoView:UIViewControllerRepresentable{
-    func makeUIViewController(context: Context) -> some UIViewController {
-        PhotoController()
-    }
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-    }
-}
