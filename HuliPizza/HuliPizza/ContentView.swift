@@ -15,7 +15,6 @@ struct ContentView: View {
     @State private var presentGrid:Bool = false
     var body: some View {
         TabView {
-            PhotoView()
             VStack {
                 HeaderView()
                     .shadow(radius: 5)
