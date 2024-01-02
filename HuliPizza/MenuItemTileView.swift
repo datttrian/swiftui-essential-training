@@ -2,7 +2,7 @@
 //  MenuItemTileView.swift
 //  HuliPizza
 //
-//  Created by Steven Lipton on 11/2/22.
+//  Created by datttrian on 2024-01-02.
 //
 
 import SwiftUI
@@ -33,9 +33,6 @@ struct MenuItemTileView: View {
         .shadow(radius: 3,x: 2,y: 2)
     }
 }
-
-struct MenuItemTileView_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuItemTileView(menuItem: MenuModel().menu[0])
-    }
+#Preview {
+    MenuItemTileView(menuItem: MenuModel().menu[0])
 }

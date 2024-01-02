@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StatusBarView: View {
     @Binding var showOrders:Bool
+    @Binding var presentGrid:Bool
     @EnvironmentObject var orders:OrderModel
     var body: some View {
         HStack {
@@ -19,6 +20,15 @@ struct StatusBarView: View {
             } label: {
                 Image(systemName: showOrders ? "cart": "menucard")
             }
+            if !showOrders {
+                Button {
+                    presentGrid.toggle()
+                } label: {
+                    Image(systemName: presentGrid ? "square.grid.3x2": "list.bullet")
+                }
+                .padding(.leading, 10)
+            }
+            
             Spacer()
             Label {
                 Text(orders.orderTotal, format: .currency(code: "USD"))
@@ -33,6 +43,7 @@ struct StatusBarView: View {
 }
 
 #Preview {
-    StatusBarView(showOrders: .constant(false))
+    StatusBarView(showOrders: .constant(false), presentGrid: .constant(true))
         .environmentObject(OrderModel())
+        .background(.black)
 }
