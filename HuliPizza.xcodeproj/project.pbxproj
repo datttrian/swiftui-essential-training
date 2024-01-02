@@ -22,6 +22,7 @@
 		DA8DF5FC2B3C9D1000D17971 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8DF5FB2B3C9D1000D17971 /* ContentView.swift */; };
 		DA8DF5FE2B3C9D1100D17971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8DF5FD2B3C9D1100D17971 /* Assets.xcassets */; };
 		DA8DF6022B3C9D1100D17971 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8DF6012B3C9D1100D17971 /* Preview Assets.xcassets */; };
+		DAF7E9DD2B441CE20076F056 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF7E9DC2B441CE20076F056 /* StatusBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DA8DF5FD2B3C9D1100D17971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8DF5FF2B3C9D1100D17971 /* HuliPizza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HuliPizza.entitlements; sourceTree = "<group>"; };
 		DA8DF6012B3C9D1100D17971 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAF7E9DC2B441CE20076F056 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				DA8DF5F92B3C9D1000D17971 /* HuliPizzaApp.swift */,
 				DA8DF5FB2B3C9D1000D17971 /* ContentView.swift */,
+				DAF7E9DC2B441CE20076F056 /* StatusBarView.swift */,
 				DA2EDAC92B3DDA6B00643177 /* OrderView.swift */,
 				DA2EDACB2B3DDA8400643177 /* MenuView.swift */,
 				DA2EDAD62B3DE31900643177 /* RatingsView.swift */,
@@ -190,6 +193,7 @@
 				DA2EDAD02B3DDB5E00643177 /* MenuRowView.swift in Sources */,
 				DA2EDAD22B3DDB7000643177 /* OrderRowView.swift in Sources */,
 				DA03F5CD2B3E383B009894AA /* MenuModel.swift in Sources */,
+				DAF7E9DD2B441CE20076F056 /* StatusBarView.swift in Sources */,
 				DA03F5CB2B3E383B009894AA /* MenuItem.swift in Sources */,
 				DA2EDACE2B3DDB4C00643177 /* MenuItemView.swift in Sources */,
 				DA2EDAD42B3DDB9A00643177 /* HeaderView.swift in Sources */,
