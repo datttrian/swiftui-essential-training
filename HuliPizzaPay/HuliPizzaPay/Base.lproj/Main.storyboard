@@ -31,7 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="7_lg" imagePlacement="top" title="Ordering App"/>
                                 <connections>
-                                    <segue destination="Dah-fM-eUY" kind="show" id="GDS-sY-O93"/>
+                                    <segue destination="Dah-fM-eUY" kind="show" destinationCreationSelector="HuliPizzaMenu3:" id="GDS-sY-O93"/>
                                 </connections>
                             </button>
                         </subviews>
