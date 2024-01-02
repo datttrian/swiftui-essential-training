@@ -13,7 +13,7 @@ struct MenuDetailView: View {
     @EnvironmentObject var order:OrderModel
     @State var pizzaCrust:PizzaCrust? = nil
     @State private var doubleIngredient:Bool = false
-    @State private  var quantity:Int = 1
+    @State private var quantity:Int = 1
     @State private var name:String = ""
     @State var orderItem = OrderItem(id: -99, item: noMenuItem)
     func updateOrder(){
@@ -67,7 +67,7 @@ struct MenuDetailView: View {
             HStack{
                 Picker(selection: $pizzaCrust ) {
                     ForEach(PizzaCrust.allCases,id:\.self){crust in
-                        Text(crust.rawValue).tag(crust)
+                        Text(crust.rawValue).tag(crust as PizzaCrust?)
                     }
                 } label: {
                     Text("Pizza Crust")
@@ -150,6 +150,10 @@ struct MenuDetailView: View {
             }
         }
         .background(.linearGradient(colors: [.white,Color("Sky"),Color("Surf").opacity(0.3),Color("Surf")], startPoint: .topLeading, endPoint: .bottom))
+        .onChange(of: item) {
+            quantity = 1
+            pizzaCrust = item?.crust ?? PizzaCrust.newYork
+        }
     }
 }
 #Preview {
